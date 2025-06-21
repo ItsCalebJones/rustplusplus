@@ -279,7 +279,7 @@ module.exports = {
             content: entity.everyone ? '@everyone' : ''
         }
 
-        await module.exports.sendMessage(guildId, content, null, instance.channelId.activity);
+        await module.exports.sendMessage(guildId, content, null, instance.channelId.alarms);
     },
 
     sendServerChangeStateMessage: async function (guildId, serverId, state) {

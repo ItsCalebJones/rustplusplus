@@ -75,7 +75,9 @@ module.exports = {
                         }
                         else {
                             name = await Scrape.scrapeSteamProfileName(client, player.steamId);
-                            calledSteamProfiles[player.steamId] = name;
+                            if (name != null){
+                                calledSteamProfiles[player.steamId] = name;
+                            }
                         }
                         if (name === null) continue;
 

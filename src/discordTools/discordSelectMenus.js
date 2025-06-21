@@ -121,6 +121,13 @@ module.exports = {
                         value: 'rustplusplus'
                     },
                     {
+                        label: 'OPSEC',
+                        description: Client.client.intlGet(guildId, 'trademarkShownBeforeMessage', {
+                            trademark: 'OPSEC'
+                        }),
+                        value: 'OPSEC'
+                    },
+                    {
                         label: 'Rust++',
                         description: Client.client.intlGet(guildId, 'trademarkShownBeforeMessage', {
                             trademark: 'Rust++'
